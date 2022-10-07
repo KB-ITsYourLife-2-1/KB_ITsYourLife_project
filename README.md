@@ -12,5 +12,5 @@ https://www.notion.so/KB-1-e223a9a2c098432fa793f896b35154f1
 > * ...
 
 ## git push test 
-> * 류진호 푸시 테스트
+> * 류진호 푸시 테스트33
 
