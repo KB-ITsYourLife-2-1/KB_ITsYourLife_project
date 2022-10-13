@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'single_pages',
     "statistic",
-    "about"
+    "about",
+    "predict"
 ]
 
 MIDDLEWARE = [

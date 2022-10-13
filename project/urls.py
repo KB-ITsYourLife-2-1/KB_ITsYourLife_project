@@ -23,4 +23,5 @@ urlpatterns = [
     path("", include('single_pages.urls')),
     path("statistic/", include('statistic.urls')),
     path("about/", include('about.urls')),
+    path("predict/", include('predict.urls')),
 ]
