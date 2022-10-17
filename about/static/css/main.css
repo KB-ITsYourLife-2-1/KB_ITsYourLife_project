@@ -3289,4 +3289,17 @@ input, select, textarea {
 			}
 
 	}
+/* Table */
+	table{
+		border-collapse: collapse;
+	}
+	td{
+		border: 1px solid red;
+		padding: 10px 12px;
+	}
+	th{
+		border: 1px solid red;
+		padding: 10px;
+		background-color: lightblue;
+	}
 
