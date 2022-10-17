@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 {% load static %}
 
+
 <html lang="ko">
 	<head>
 		<title>텃밭</title>
@@ -16,23 +17,23 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href={% url "home" %} id="logo">텃밭</a></h1>
-                        <p>더 편한 농산물 가격 예측</p>
+						<h1><a href={%url "home" %} id="logo" >텃밭</a></h1>
+						<p>더 편한 농산물 가격 예측</p>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li>
-									<a  href={% url "predict" %}>가격예측</a>
+									<a  href={%url "predict" %}>가격예측</a>
 									<ul>
-										<li><a href={% url "predict_1" %}>깻잎</a></li>
-										<li><a href={% url "predict_2" %}>대파</a></li>
-										<li><a href={% url "predict_3" %}>마늘</a></li>
-										<li><a href={% url "predict_4" %}>무</a></li>
-                                        <li><a href={% url "predict_5" %}>배추</a></li>
-										<li><a href={% url "predict_6" %}>상추</a></li>
-										<li><a href={% url "predict_7" %}>양파</a></li>
-										<li><a href={% url "predict_8" %}>청양고추</a></li>
+										<li><a href={%url "predict_1" %}>깻잎</a></li>
+										<li><a href={%url "predict_2" %}>대파</a></li>
+										<li><a href={%url "predict_3" %}>마늘</a></li>
+										<li><a href={%url "predict_4" %}>무</a></li>
+                                        <li><a href={%url "predict_5" %}>배추</a></li>
+										<li><a href={%url "predict_6" %}>상추</a></li>
+										<li><a href={%url "predict_7" %}>양파</a></li>
+										<li><a href={%url "predict_8" %}>청양고추</a></li>
 									</ul>
 								</li>
                                 <li>
