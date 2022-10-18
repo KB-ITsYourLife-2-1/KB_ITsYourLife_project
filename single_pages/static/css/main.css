@@ -2589,7 +2589,7 @@ input, select, textarea {
 			}
 
 				#nav > ul > li a {
-				    font-size: 2000%
+				    /*font-size: 2000%;*/
 					color: #e8fcea;
 					text-decoration: none;
 					border: 0;
