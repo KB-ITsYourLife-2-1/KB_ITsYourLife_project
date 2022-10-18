@@ -13,8 +13,8 @@ html, body {
   }
   #chat-circle {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 100px;
+    right: 100px;
     background: #5A5EB9;
     width: 80px;
     height: 80px;  
@@ -23,6 +23,7 @@ html, body {
     padding: 28px;
     cursor: pointer;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    z-index: 99999;
   }
   
   .btn#my-btn {
@@ -47,17 +48,20 @@ html, body {
   
   
   .chat-box {
+    position: fixed;
     display:none;
     background: #efefef;
     position:fixed;
-    right:30px;
-    bottom:50px;  
-    width:350px;
+    right:50px;
+    bottom:50px;
+    width:400px;
+    height: 630px;
     max-width: 85vw;
     max-height:100vh;
     border-radius:5px;  
   /*   box-shadow: 0px 5px 35px 9px #464a92; */
     box-shadow: 0px 5px 35px 9px #ccc;
+    z-index: 99999;
   }
   .chat-box-toggle {
     float:right;
@@ -71,13 +75,14 @@ html, body {
   }
   .chat-box-header {
     background: #5A5EB9;
-    height:70px;
+    height:80px;
     border-top-left-radius:5px;
     border-top-right-radius:5px; 
     color:white;
     text-align:center;
     font-size:20px;
-    padding-top:17px;
+    padding-top:10px;
+    padding-bottom: 10px;
   }
   .chat-box-body {
     position: relative;  
@@ -146,7 +151,7 @@ html, body {
   }
   .chat-logs {
     padding:15px;
-    height:370px;
+    height: 503px;
     overflow-y:scroll;
   }
   
@@ -193,7 +198,8 @@ html, body {
     background:white;
     padding:10px 15px 10px 15px;  
     color:#666;
-    max-width:75%;
+    max-width:80%;
+    height: auto;
     float:left;
     margin-left:10px; 
     position:relative;
@@ -220,20 +226,29 @@ html, body {
   }
 
   #vege_all{
-          width:210px;
-          height:130px;
+          width:100%;
+          height:auto;
       }
 
   #vege{
-      width:60px;
+      width:40px;
       height:40px;
       margin-bottom:5px;
       margin-left:5px;
+      padding: 0px;
+  }
+
+  button{
+    width:40px;
+      height:40px;
+      margin-bottom:5px;
+      margin-left:5px;
+      padding: 0px;
   }
 
   #find_all_{
       width:180px;
-      height:85px;
+      height:auto;
   }
   #find_{
     width:80px;
@@ -257,6 +272,5 @@ html, body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-left : 10px;
-    margin-top: -3px;
     float: left;
 }

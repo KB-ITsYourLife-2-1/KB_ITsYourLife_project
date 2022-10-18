@@ -6,27 +6,153 @@ $(function() {
           str += "<div id='cm-msg-2' class='chat-msg self'>";
           str += "          <div class='cm-msg-text'>";
           str += "            <div id = 'choose_1'>";
-          str += vege_chs + '를 클릭했습니다.';
+          str += vege_chs + ' 을/를 클릭했습니다.';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
           $("#cm-msg-2").hide().fadeIn(500);
-        var str="";
+        var id = this.id
+        if(id==1){
+            var str="";
           str += "<div id='cm-msg-3' class='chat-msg user'>";
           str += "          <div class='cm-msg-text'>";
           str += "            <div id = 'find_all_'>";
-          str += '                <button id = "find_"  onclick="location.href=\'http://www.naver.com\'">가격 예측</button>';
-          str += '                <button id = "find_" onclick="location.href=\'http://www.google.com\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'http://www.google.com\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_1\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_1\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_1\'">농사물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
           $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==2){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_2\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_2\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_2\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==3){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_3\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_3\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_3\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==4){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_4\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_4\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_4\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==5){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_5\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_5\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_5\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==6){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_6\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_6\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_6\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==7){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_7\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_7\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_7\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==8){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict/product_8\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic/product_8\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_8\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+        else if(id==9){
+            var str="";
+          str += "<div id='cm-msg-3' class='chat-msg user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'find_all_'>";
+          str += '                <button id = "find_"  onclick="location.href=\'/predict\'">가격 예측</button>';
+          str += '                <button id = "find_" onclick="location.href=\'statistic\'">통계 자료</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about_1\'">농사물 바로 알기</button>';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-3").hide().fadeIn(1500);
+        }
+
+         var str="";
+          str += "<div id='cm-msg-4' class='chat-msg-user'>";
+          str += "          <div class='cm-msg-text'>";
+          str += "            <div id = 'choose_1'>";
+          str += ' 농산물을 다시 선택하시려면 우상단의 휴지통을 눌러주세요.';
+          str += '            </div>';
+          str += "          </div>";
+          str += "        </div>";
+          $(".chat-logs").append(str);
+          $("#cm-msg-4").hide().fadeIn(500);
     })
 
-    var INDEX = 0; 
+    var INDEX = 0;
     $("#chat-submit").click(function(e) {
       e.preventDefault();
       var msg = $("#chat-input").val(); 
