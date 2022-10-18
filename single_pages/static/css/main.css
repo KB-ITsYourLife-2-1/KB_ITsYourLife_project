@@ -112,7 +112,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: #37c0fb;
+		color: #e8fcea;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -2589,6 +2589,7 @@ input, select, textarea {
 			}
 
 				#nav > ul > li a {
+				    font-size: 2000%
 					color: #e8fcea;
 					text-decoration: none;
 					border: 0;
@@ -2677,7 +2678,7 @@ input, select, textarea {
 
 		.dropotron.level-0 {
 			border-radius: 0 0 5px 5px;
-			font-size: 0.9em;
+			font-size: 120%;
 			padding-top: 0;
 			margin-top: -1px;
 		}
