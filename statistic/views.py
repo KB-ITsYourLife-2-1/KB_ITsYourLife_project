@@ -49,3 +49,8 @@ def p8(requeast):
         requeast,
         'statistic/p8.html'
     )
+def p9(requeast):
+    return render(
+        requeast,
+        'statistic/p9.html'
+    )

@@ -14,4 +14,5 @@ urlpatterns = [
     path("product_6/", views.p6, name="predict_6"),
     path("product_7/", views.p7, name="predict_7"),
     path("product_8/", views.p8, name="predict_8"),
+    path("product_9/", views.p9, name="predict_9"),
 ]

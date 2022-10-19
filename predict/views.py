@@ -48,3 +48,8 @@ def p8(requeast):
         requeast,
         'predict/p8.html'
     )
+def p9(requeast):
+    return render(
+        requeast,
+        'predict/p9.html'
+    )

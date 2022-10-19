@@ -42,3 +42,9 @@ def p8(requeast):
         requeast,
         'about/p8.html'
     )
+
+def p9(requeast):
+    return render(
+        requeast,
+        'about/p9.html'
+    )
