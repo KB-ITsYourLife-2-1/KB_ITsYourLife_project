@@ -144,7 +144,7 @@ $(function() {
           str += "<div id='cm-msg-4' class='chat-msg-user'>";
           str += "          <div class='cm-msg-text'>";
           str += "            <div id = 'choose_1'>";
-          str += ' 농산물을 다시 선택하시려면 우상단의 휴지통을 눌러주세요.';
+          str += ' 농산물을 다시 선택하시려면 우측상단의 휴지통을 눌러주세요.';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -171,7 +171,7 @@ $(function() {
           var str="";
           str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
           str += "          <span class=\"msg-avatar\">";
-          str += "            <img src=\"https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MTVfMTgx%2FMDAxNjUwMDE0MDAzNDg5.eryItdOF2i9tpWB6fYUdYtN4qABYmNLGEOz089yN4Xwg.bT6P2unkDBKpqbCvMUZ7Ho9L6fdIne3D6HPhekLB4p0g.JPEG.an3895%2FIMG_5102.jpg&type=a340\">";
+          str += "          <img src=\"../../static/images/nong.jpg\">";
           str += "          <\/span>";
           str += "          <div class=\"cm-msg-text\">";
           str += 10;
@@ -184,7 +184,7 @@ $(function() {
           var str="";
           str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
           str += "          <span class=\"msg-avatar\">";
-          str += "            <img src=\"https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MTVfMTgx%2FMDAxNjUwMDE0MDAzNDg5.eryItdOF2i9tpWB6fYUdYtN4qABYmNLGEOz089yN4Xwg.bT6P2unkDBKpqbCvMUZ7Ho9L6fdIne3D6HPhekLB4p0g.JPEG.an3895%2FIMG_5102.jpg&type=a340\">";
+          str += "            <img src=\"../../static/images/user.png\">";
           str += "          <\/span>";
           str += "          <div class=\"cm-msg-text\">";
           str += msg;
