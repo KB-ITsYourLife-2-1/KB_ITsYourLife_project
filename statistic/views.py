@@ -1,8 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-
-
 def total(request):
     return render(
         request,

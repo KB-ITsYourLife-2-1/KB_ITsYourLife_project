@@ -8,6 +8,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen">
 
+         <style>
+    li {
+      list-style: none;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .real-upload {
+      display: none;
+    }
+
+    .upload {
+      width: 200px;
+      height: 200px;
+      background-color: antiquewhite;
+    }
+
+    .image-preview {
+      width: 1300px;
+      height: 200px;
+      background-color: aquamarine;
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -71,37 +100,14 @@
 				</div>
 
             <!-- Posts -->
-                <section class="wrapper style1" style="padding-top: 60px !important; padding-bottom: 100px !important; height: 600px !important;">
-                    <div style="margin-left: 142.4px; margin-right: 142.4px; padding-bottom: 50px; padding-top: 20px">
-                        <h1 style="line-height:normal; text-align:center; font-size:25px;">
-                            <span style="padding: 13px 14px; border-bottom: 2px solid #212121; border-top: 2px solid #212121">
-                                <span style="letter-spacing:normal; margin-left: 40px; margin-right: 40px">농산물 찾기</span>
-                            </span>
-                        </h1>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <section class="col-6 col-12-narrower">
-                                <div class="box post">
-                                    <a href="#" class="image left"><img src="../../static/images/pic01.jpg" alt=""></a>
-                                    <div class="inner">
-                                        <h3>The First Thing</h3>
-                                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="col-6 col-12-narrower">
-                                <div class="box post">
-                                    <a href="#" class="image left"><img src="../../static/images/pic02.jpg" alt=""></a>
-                                    <div class="inner">
-                                        <h3>The Second Thing</h3>
-                                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </section>
+            <input type="file" class="real-upload" accept="image/*" required multiple style="display: none;">
+              <div class="upload"></div>
+              <script>
+                const realUpload = document.querySelector('.real-upload');
+                const upload = document.querySelector('.upload');
+
+                upload.addEventListener('click', () => realUpload.click());
+              </script>
 
             <!-- Footer -->
                 <div id="footer" style="padding-top: 0px !important;padding-bottom:0px !important;">
