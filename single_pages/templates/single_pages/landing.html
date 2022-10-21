@@ -9,6 +9,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen">
 
+        <style>
+            @font-face {
+                font-family: 'bmjua';
+                src: url('../../static/images/BMJUA_ttf.ttf') format('truetype');
+            }
+        </style>
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -72,7 +79,7 @@
 				</div>
 
             <!-- Posts -->
-                <section class="wrapper style1" style="padding-top: 100px !important; padding-bottom: 100px !important; height: 600px !important;">
+                <section class="wrapper style1" style="padding-top: 100px !important; padding-bottom: 100px !important; height: auto !important;">
                     <div class="container">
                         <div class="row">
                             <section class="col-6 col-12-narrower">
@@ -84,12 +91,12 @@
                                     </div>
                                 </div>
                             </section>
-                            <section class="col-6 col-12-narrower">
-                                <div class="box post">
-                                    <a href="#" class="image left"><img src="../../static/images/pic02.jpg" alt=""></a>
-                                    <div class="inner">
-                                        <h3>The Second Thing</h3>
-                                        <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+                            <section class="col-6 col-12-narrower" style="background-image: url('../../static/images/pad.png'); background-size: cover; height: 530px; padding-right: 50px; padding-bottom: 50px">
+                                <div class="box post" style="margin: 30px">
+                                    <p style="font-size: 40px; font-family: bmjua; line-height:50px; margin-bottom: 20px; text-align: center; text-decoration: underline #66b978 8px">농산물의 정확한 가격예측을 위해<br>미래에서 온 농부 "미농"!!</p>
+                                    <div >
+                                        <a href="#" class="image left" style="padding-right: 10px"><img src="../../static/images/minong.jpg" alt=""></a>
+                                        <p style="font-size: 25px;font-weight: bold">AI 챗봇 미농이가 원하시는 서비스를 편하게 제공해 드릴게요!<br>우측 하단 '미농이와 대화하기' 클릭!</p>
                                     </div>
                                 </div>
                             </section>

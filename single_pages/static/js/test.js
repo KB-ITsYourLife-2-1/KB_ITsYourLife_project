@@ -11,10 +11,9 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-2").hide().fadeIn(500);
 
         var str="";
-          str += "<div id='cm-msg-3' class='chat-msg-user'>";
+          str += "<div id='cm-msg-7' class='chat-msg-user'>";
           str += "          <div class='cm-msg-text'>";
           str += "            <div id = 'choose_1'>";
           str += vege_chs + ' 을/를 원하시는군요!'
@@ -24,7 +23,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(0);
 
         var id = this.id
         if(id==1){
@@ -39,7 +37,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==2){
             var str="";
@@ -53,7 +50,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==3){
             var str="";
@@ -67,7 +63,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==4){
             var str="";
@@ -81,7 +76,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==5){
             var str="";
@@ -95,7 +89,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==6){
             var str="";
@@ -109,7 +102,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==7){
             var str="";
@@ -123,7 +115,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==8){
             var str="";
@@ -137,7 +128,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
         else if(id==9){
             var str="";
@@ -151,7 +141,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(1500);
         }
 
          var str="";
@@ -163,7 +152,6 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(500);
 
      $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);
     })
@@ -238,6 +226,7 @@ $(function() {
       $("div").detach("#cm-msg-2")
       $("div").detach("#cm-msg-3")
       $("div").detach("#cm-msg-4")
+        $("div").detach("#cm-msg-7")
       $('#vege_all > button').attr('disabled',false)
     })
 

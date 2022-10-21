@@ -213,7 +213,7 @@ def make():
                 pad_inches=0.3)
 
 def landing(request):
-    make()
+    # make()
     return render(
         request,
         'single_pages/landing.html'
