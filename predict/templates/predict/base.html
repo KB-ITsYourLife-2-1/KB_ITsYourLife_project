@@ -74,6 +74,94 @@
                 {% block main_area %}
                 {% endblock %}
 
+            <!-- Chat bot -->
+                <!DOCTYPE html>
+                <html>
+
+                <head>
+                    <title>iDEW Chatbot</title>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+                    <link rel="stylesheet" type="text/css" href="../../static/css/test.css">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+                </head>
+
+                <body>
+                    <div id="chat-circle" class="btn btn-light" style="bottom: 40px; right: 50px">
+                        <div id="chat-overlay"></div>
+                        <div class="row">
+                            <section class="col-9" style="padding-left: 53px;padding-top: 42px">
+                                <div style="font-size: 25px">미농이와 대화하기</div>
+                            </section>
+                            <section class="col-3 material-icons" style="padding-left: 13px; padding-top: 35px">
+                                <div style="font-size: 60px">question_answer</div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="chat-box">
+                        <div class="chat-box-header">
+                            <img src= "../../static/images/nong.jpg" alt="My Image" class = "chat-image">
+                            <span class="chat-box-toggle" title = '화면종료'>
+                                <i class="material-icons">close</i>
+                            </span>
+                            <span class="chat-box-reset" title = "리셋버튼">
+                                <i class="material-icons">delete_outline</i>
+                            </span>
+                        </div>
+
+                        <div class="chat-box-body">
+                            <div class='wrapper' style="padding: 0px">
+                                <div id="dialogue"></div>
+                                <form onSubmit="return chatbot.sendMessage()"></form>
+                            </div>
+                            <div class="chat-box-overlay"></div>
+                            <div class="chat-logs">
+                                <div id='cm-msg-1' class="chat-msg-user">
+                                    <div class="cm-msg-text">
+                                        <text>안녕하세요:)<br>미래에서 온 농부, 미농입니다!</text>
+                                    </div>
+                                    <div class="cm-msg-text">
+                                        <text>원하시는 농산물을 선택해주세요!</text>
+                                    </div>
+                                    <div id='cm-msg-1' class="chat-msg-user">
+                                        <div class="cm-msg-text" style="width: 220px; height:430px">
+                                            <div id = 'vege_all'>
+                                                <button id = '1'>깻잎</button>
+                                                <button id = '2'>대파</button>
+
+                                                <button id = '3'>마늘</button>
+                                                <button id = '4'>무</button>
+
+                                                <button id = '5'>배추</button>
+                                                <button id = '6'>상추</button>
+
+                                                <button id = '7'>양파</button>
+                                                <button id = '8'>시금치</button>
+
+                                                <button id = '9'>양상추</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!--chat-log -->
+                            </div>
+                            <div class="chat-input">
+                                <form>
+                                    <input type="text" id="chat-input" placeholder="Send a message...">
+                                    <button type="submit" class="chat-submit" id="chat-submit">
+                                        <i class="material-icons">send</i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="../../static/js/test.js"></script>
+                </body>
+                </html>
 
             <!-- Footer -->
                 <div id="footer" style="padding-top: 0px !important;padding-bottom:0px !important;">

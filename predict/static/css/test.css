@@ -17,7 +17,7 @@ html, body {
   }
   #chat-circle {
     position: fixed;
-    bottom: 100px;
+    bottom: 130px;
     right: 100px;
     background: #1e9d2b;
     width: 305px;

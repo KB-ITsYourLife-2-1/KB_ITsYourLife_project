@@ -24,7 +24,7 @@ $(function() {
           str += "          </div>";
           str += "        </div>";
           $(".chat-logs").append(str);
-          $("#cm-msg-3").hide().fadeIn(0);
+          $("#cm-msg-3").hide().fadeIn(500);
 
         var id = this.id
         if(id==1){
