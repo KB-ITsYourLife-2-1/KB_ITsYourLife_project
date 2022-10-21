@@ -24,7 +24,7 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href={%url "home" %} id="logo" >미래에서 온 농부</a></h1>
+						<h1><a href={% url "home" %} id="logo" >미래에서 온 농부</a></h1>
 						<p>더 편한 농산물 가격 예측</p>
 
 					<!-- Nav -->
@@ -33,13 +33,13 @@
 								<li>
 									<a  href={%url "predict" %} style="width:190px">가격예측</a>
 									<ul>
-										<li><a href={%url "predict_1" %}>깻잎</a></li>
-										<li><a href={%url "predict_2" %}>대파</a></li>
-										<li><a href={%url "predict_3" %}>마늘</a></li>
-										<li><a href={%url "predict_4" %}>무</a></li>
-                                        <li><a href={%url "predict_5" %}>배추</a></li>
-										<li><a href={%url "predict_6" %}>상추</a></li>
-										<li><a href={%url "predict_7" %}>양파</a></li>
+										<li><a href={% url "predict_1" %}>깻잎</a></li>
+										<li><a href={% url "predict_2" %}>대파</a></li>
+										<li><a href={% url "predict_3" %}>마늘</a></li>
+										<li><a href={% url "predict_4" %}>무</a></li>
+                                        <li><a href={% url "predict_5" %}>배추</a></li>
+										<li><a href={% url "predict_6" %}>상추</a></li>
+										<li><a href={% url "predict_7" %}>양파</a></li>
 										<li><a href={% url "predict_8" %}>시금치</a></li>
                                         <li><a href={% url "predict_9" %}>양상추</a></li>
 									</ul>
@@ -193,25 +193,28 @@
                 </body>
                 </html>
 
-            <!-- Banner -->
-                <section id="banner" style="height: 100px !important;">
-                    <header>
-                        <h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
-                        <a href="#" class="button">Learn More</a>
-                    </header>
-                </section>
-
             <!-- Footer -->
-                <div id="footer" style="padding-top: 0px !important;padding-bottom:0px !important;">
-
-                    <!-- Copyright -->
-                        <div class="copyright">
-                            <ul class="menu">
-                                <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-
+                <section class="section1 dv_wrap" style="padding-top: 20px;">
+                <span class="news" style="margin-left: 10px;margin-top: 10px;">
+                    농산뉴스
+                </span>
+                <div id="flow_wrap" style="visibility: visible; opacity: 1;padding-bottom: 20px;width: 1650px;margin-left: 0px;">
+                    <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; inset: auto; z-index: auto; width: 570px; height: 57px; margin: 0px 0px 0px 6.32812px; overflow: hidden;"><ul class="list_dot1" style="left: 0; padding-left: 0;text-align: left; float: none; position: absolute; inset: 0px auto auto 0px; margin: 0px; width: 2470px; height: 57px; z-index: auto;">
+                    <li style="width: 190px; height: 57px left:0;">
+                                    <a href={{link.0}}>{{title.0}}</a>
+                    </li><li style="width: 170px; height: 57px;">
+                        <a href={{link.1}}>{{title.1}}</a>
+                    </li><li style="width: 190px; height: 57px;">
+                        <a href={{link.2}}>{{title.2}}</a>
+                    </li><li style="width: 190px; height: 57px;">
+                        <a href={{link.3}}>{{title.3}}</a>
+                    </li><li style="width: 190px; height: 57px;">
+                        <a href={{link.4}}>{{title.4}}</a>
+                    </li><li style="width: 190px; height: 57px;">
+                        <a href={{link.5}}>{{title.5}}</a>
+                    </li></ul></div>
                 </div>
+            </section>
 
 		</div>
 
