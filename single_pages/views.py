@@ -215,7 +215,7 @@ def make():
                 pad_inches=0.3)
 
 def landing(request):
-    make()
+    # make()
     url = "https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%EB%86%8D%EC%82%B0%EB%AC%BC"
 
     response = requests.get(url)
