@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 {% load static %}
 
-<html lang="ko">
-	<head>
-		<title>텃밭</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen">
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+   <head>
+      <title>텃밭</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen">
 
          <style>
     li {
@@ -37,77 +37,144 @@
     }
   </style>
 
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+   </head>
+   <body class="is-preload">
+      <div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header">
+         <!-- Header -->
+            <div id="header">
 
-					<!-- Logo -->
-						<h1><a  style="letter-spacing: 2px" href={% url "home" %}>미래에서 온 농부</a></h1>
+               <!-- Logo -->
+                  <h1><a href={% url "home" %} id="logo" >미래에서 온 농부</a></h1>
                         <p>더 편한 농산물 가격 예측</p>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li>
-									<a   style="width:190px" href={% url "predict" %}>가격예측</a>
-									<ul>
-										<li><a href={% url "predict_1" %}>깻잎</a></li>
-										<li><a href={% url "predict_2" %}>대파</a></li>
-										<li><a href={% url "predict_3" %}>마늘</a></li>
-										<li><a href={% url "predict_4" %}>무</a></li>
+               <!-- Nav -->
+                  <nav id="nav">
+                     <ul>
+                        <li>
+                           <a  href={% url "predict" %} style="width:190px">가격예측</a>
+                           <ul>
+                              <li><a href={% url "predict_1" %}>깻잎</a></li>
+                              <li><a href={% url "predict_2" %}>대파</a></li>
+                              <li><a href={% url "predict_3" %}>마늘</a></li>
+                              <li><a href={% url "predict_4" %}>무</a></li>
                                         <li><a href={% url "predict_5" %}>배추</a></li>
-										<li><a href={% url "predict_6" %}>상추</a></li>
-										<li><a href={% url "predict_7" %}>양파</a></li>
-										<li><a href={% url "predict_8" %}>시금치</a></li>
+                              <li><a href={% url "predict_6" %}>상추</a></li>
+                              <li><a href={% url "predict_7" %}>양파</a></li>
+                              <li><a href={% url "predict_8" %}>시금치</a></li>
                                         <li><a href={% url "predict_9" %}>양상추</a></li>
-									</ul>
-								</li>
+                           </ul>
+                        </li>
                                 <li>
-									<a style="width:190px" href={% url "statistic" %}>가격통계</a>
-									<ul>
-										<li><a href={% url "statistic_1" %}>깻잎</a></li>
-										<li><a href={% url "statistic_2" %}>대파</a></li>
-										<li><a href={% url "statistic_3" %}>마늘</a></li>
-										<li><a href={% url "statistic_4" %}>무</a></li>
+                           <a href={% url "statistic" %} style="width:190px">가격통계</a>
+                           <ul>
+                              <li><a href={% url "statistic_1" %}>깻잎</a></li>
+                              <li><a href={% url "statistic_2" %}>대파</a></li>
+                              <li><a href={% url "statistic_3" %}>마늘</a></li>
+                              <li><a href={% url "statistic_4" %}>무</a></li>
                                         <li><a href={% url "statistic_5" %}>배추</a></li>
-										<li><a href={% url "statistic_6" %}>상추</a></li>
-										<li><a href={% url "statistic_7" %}>양파</a></li>
-										<li><a href={% url "statistic_8" %}>시금치</a></li>
+                              <li><a href={% url "statistic_6" %}>상추</a></li>
+                              <li><a href={% url "statistic_7" %}>양파</a></li>
+                              <li><a href={% url "statistic_8" %}>시금치</a></li>
                                         <li><a href={% url "statistic_9" %}>양상추</a></li>
-									</ul>
-								</li>
-								<li><a style="color: #fff; font-weight:900; width:190px" href={% url "find" %}>농산물 찾기</a></li>
+                           </ul>
+                        </li>
+                        <li><a style="color: #fff; font-weight:900; width:190px" href={% url "find" %}>농산물 찾기</a></li>
                                 <li>
-									<a style="width:190px">농산물 바로알기</a>
-									<ul>
-										<li><a href={% url "about_1" %}>깻잎</a></li>
-										<li><a href={% url "about_2" %}>대파</a></li>
-										<li><a href={% url "about_3" %}>마늘</a></li>
-										<li><a href={% url "about_4" %}>무</a></li>
+                           <a style="width:190px">농산물 바로알기</a>
+                           <ul>
+                              <li><a href={% url "about_1" %}>깻잎</a></li>
+                              <li><a href={% url "about_2" %}>대파</a></li>
+                              <li><a href={% url "about_3" %}>마늘</a></li>
+                              <li><a href={% url "about_4" %}>무</a></li>
                                         <li><a href={% url "about_5" %}>배추</a></li>
-										<li><a href={% url "about_6" %}>상추</a></li>
-										<li><a href={% url "about_7" %}>양파</a></li>
-										<li><a href={% url "about_8" %}>시금치</a></li>
+                              <li><a href={% url "about_6" %}>상추</a></li>
+                              <li><a href={% url "about_7" %}>양파</a></li>
+                              <li><a href={% url "about_8" %}>시금치</a></li>
                                         <li><a href={% url "about_9" %}>양상추</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
-
-				</div>
-
+                           </ul>
+                        </li>
+                     </ul>
+                  </nav>
+            </div>
+        </div>
             <!-- Posts -->
-            <input type="file" class="real-upload" accept="image/*" required multiple style="display: none;">
-              <div class="upload"></div>
-              <script>
-                const realUpload = document.querySelector('.real-upload');
-                const upload = document.querySelector('.upload');
+                <section class="wrapper style1" style="padding-top: 100px !important; padding-bottom: 100px !important; height: auto !important;">
+                    <div class="container" style="width:1200px; background-color:rgb(252, 248, 237)">
+                        <div style="background-color: rgb(252, 248, 237); padding-top: 60px; padding-bottom:30px; height:auto; text-align: center">
+                            <span style="color:#BC9B5D; font-size:57px; letter-spacing:normal; font-weight: bold; margin: 30px">농산물 찾기</span>
+                            <hr style="background-color:#BC9B5D; height:3px; width:95%; margin-top:40px; ">
+                        </div>
+                        <div class="row" style="margin-left: 0px; margin-top:0px">
+                            <div class="col-4" style="padding: 0px;">
+                                <table>
+                                    <tr>
+                                        <td style="background-color: rgb(252, 248, 237)">
+                                            <div style="font-family:bmjua; font-size:25px; text-align:center">
+                                               농산물 사진을 주시면 AI 미농이가<br>어떤 농산물인지 알려드릴게요!
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr  style="background-color: rgb(252, 248, 237)">
+                                        <td  style="background-color: rgb(252, 248, 237)">
+                                            <div style="height: 100%">
+                                                <img src="../../static/images/annong.png" style="height: 100%; width: 362.5px; object-fit: cover">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <table class="col-8" style="margin: 0px">
+                {# 1행 #}
+                                 <tr  style="text-align:center">
+                                     <td style="padding: 10px 30px; background-color: rgb(252, 248, 237)" colspan="2">
+                                         <div id="uploadedImage";></div>
+                                         <form action="" enctype="multipart/form-data" id="imageUploadForm" method="post">
+                                            {% csrf_token %}
+                                             {{form.as_p}}
+                                            <button class="btn btn-outline-success" type="submit" style="margin:auto">Submit</button>
+                                         </form>
+                                     </td>
+                                 </tr>
+                {# 2행 #}
+                                 <tr>
+                                     <td style="padding: 10px 30px; background-color: rgb(252, 248, 237)">
+                                         <div class="row" style="margin:0px">
+                                             <div class="col-6" style="padding: 3px 15px; border: 2px solid rgba(188, 155, 93, 1); background-color: white; font-family:bmjua; font-weight:100; font-size:90%; display:flex; justify-content:center; color:#A4A4A4" >
+                                                 {% if inference_img %}
+                                                    <img src="{{inference_img}}" class="img-fluid" style="width:auto; height:auto; max-width: 370px">
+                                                 {% else %}
+                                                    <div style=" display:flex; align-items:center;">이미지를 넣어주세요!</div>
+                                                 {% endif %}
+                                             </div>
+                                             <div class="col-6" style="padding: 3px 15px; border: 2px solid rgba(188, 155, 93, 1); background-color: white; font-family:bmjua; font-size:90%; text-align:center;">
+                                                 {% if img_all %}
+                                                    {% for img in img_all %}
+                                                        <div style="margin-top:15px">
+                                                            <span style="font-size:110%;">미농이가 보기에는 {{img.0}}인 것 같아요!</span><br>
+                                                        </div>
+                                                        <div>
+                                                            <button href = "{% url img.1 %}" style="color:black; margin:auto; display:block; margin-bottom:5px; margin-top:10px; display:flex; align-items:center;">{{img.0}} 가격예측</button>
+                                                            <button href = "{% url img.2 %}" style="color:black; margin:auto; display:block; margin-bottom:5px; display:flex; align-items:center;">{{img.0}} 가격통계</button>
+                                                            <button href = "{% url img.3 %}" style="color:black; margin:auto; display:block; margin-bottom:15px; display:flex; align-items:center;">{{img.0}} 바로알기</button>
+                                                        </div>
+                                                    {% endfor %}
+                                                 {% else %}
+                                                 <span style="color:#A4A4A4"><br>미농이가 보기에는 ...<br><br></span>
+                                                 {% endif %}
+                                             </div>
+                                         </div>
+                                     </td>
+                                 </tr>
+                            </table>
+                        </div>
+                    </div>
 
-                upload.addEventListener('click', () => realUpload.click());
-              </script>
+                </section>
+
+
+
+
 
             <!-- Chat bot -->
                 <!DOCTYPE html>
@@ -210,15 +277,15 @@
 
                 </div>
 
-		</div>
+      </div>
 
-		<!— Scripts —>
-			<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
-			<script type="text/javascript" src="../../static/js/jquery.dropotron.min.js"></script>
-			<script type="text/javascript" src="../../static/js/browser.min.js"></script>
-			<script type="text/javascript" src="../../static/js/breakpoints.min.js"></script>
-			<script type="text/javascript" src="../../static/js/util.js"></script>
-			<script type="text/javascript" src="../../static/js/main.js"></script>
+      <!— Scripts —>
+         <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+         <script type="text/javascript" src="../../static/js/jquery.dropotron.min.js"></script>
+         <script type="text/javascript" src="../../static/js/browser.min.js"></script>
+         <script type="text/javascript" src="../../static/js/breakpoints.min.js"></script>
+         <script type="text/javascript" src="../../static/js/util.js"></script>
+         <script type="text/javascript" src="../../static/js/main.js"></script>
 
-	</body>
+   </body>
 </html>

@@ -1,221 +1,18 @@
+from django.views.generic.edit import CreateView
 from django.shortcuts import render
-import pandas as pd
-import matplotlib.pyplot as plt
+from .forms import ImageUploadForm
+from .models import ImageModel
 from bs4 import BeautifulSoup
+from PIL import Image as im
+import shutil
 import requests
-plt.rcParams['font.family'] = 'Malgun Gothic'
-
-def make():
-    # 데이터 불러오기
-    data = pd.read_csv(
-        "C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/ns.csv")
-
-    # 데이터 전처리
-    data = data.tail(7)
-    data["date"] = pd.to_datetime(data["date"]).dt.strftime('%m/%d')
-    dt = data.drop(columns=['Unnamed: 0', '배추_거래량(kg)', '양파_거래량(kg)', '마늘_거래량(kg)', '깻잎_거래량(kg)',
-                            '대파_거래량(kg)', '상추_거래량(kg)', '양상추_거래량(kg)', '무_거래량(kg)', '시금치_거래량(kg)', 'day'])
-    dt.rename(columns={'배추_가격(원/kg)': '배추', '양파_가격(원/kg)': '양파', '마늘_가격(원/kg)': '마늘', '깻잎_가격(원/kg)': '깻잎',
-                       '대파_가격(원/kg)': '대파', '상추_가격(원/kg)': '상추', '양상추_가격(원/kg)': '양상추', '무_가격(원/kg)': '무',
-                       '시금치_가격(원/kg)': '시금치'}, inplace=True)
-    dt_ = data[['date', '배추_거래량(kg)', '양파_거래량(kg)', '마늘_거래량(kg)', '깻잎_거래량(kg)',
-                '대파_거래량(kg)', '상추_거래량(kg)', '양상추_거래량(kg)', '무_거래량(kg)', '시금치_거래량(kg)']].copy()
-    dt_.rename(columns={'배추_거래량(kg)': '배추', '양파_거래량(kg)': '양파', '마늘_거래량(kg)': '마늘', '깻잎_거래량(kg)': '깻잎',
-                        '대파_거래량(kg)': '대파', '상추_거래량(kg)': '상추', '양상추_거래량(kg)': '양상추', '무_거래량(kg)': '무',
-                        '시금치_거래량(kg)': '시금치'}, inplace=True)
-    dt_[['배추', '양파', '마늘', '깻잎', '대파', '상추', '양상추', '무', '시금치']] = dt_[
-        ['배추', '양파', '마늘', '깻잎', '대파', '상추', '양상추', '무', '시금치']].round(1)
-
-    # 가격통계
-    ## 깻잎
-    plt.figure(figsize=(6, 4))
-    p1 = dt[["date", "깻잎"]]
-    bar1 = plt.bar(p1["date"], p1["깻잎"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar1:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height, '%.1f' % height, ha='center', va='bottom', size=10)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p1.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 대파
-    plt.figure(figsize=(6, 4))
-    p2 = dt[["date", "대파"]]
-    bar2 = plt.bar(p2["date"], p2["대파"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar2:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height, '%.1f' % height, ha='center', va='bottom', size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p2.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 마늘
-    plt.figure(figsize=(6, 4))
-    p3 = dt[["date", "마늘"]]
-    bar3 = plt.bar(p3["date"], p3["마늘"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar3:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p3.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 무
-    plt.figure(figsize=(6, 4))
-    p4 = dt[["date", "무"]]
-    bar4 = plt.bar(p4["date"], p4["무"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar4:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p4.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 배추
-    plt.figure(figsize=(6, 4))
-    p5 = dt[["date", "배추"]]
-    bar5 = plt.bar(p5["date"], p5["배추"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar5:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p5.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 상추
-    plt.figure(figsize=(6, 4))
-    p6 = dt[["date", "상추"]]
-    bar6 = plt.bar(p6["date"], p6["상추"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar6:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p6.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 양파
-    plt.figure(figsize=(6, 4))
-    p7 = dt[["date", "양파"]]
-    bar7 = plt.bar(p7["date"], p7["양파"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar7:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p7.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 시금치
-    plt.figure(figsize=(6, 4))
-    p8 = dt[["date", "시금치"]]
-    bar8 = plt.bar(p8["date"], p8["시금치"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar8:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height * 0.99, '%.1f' % height, ha='center', va='bottom',
-                 size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p8.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 양상추
-    plt.figure(figsize=(6, 4))
-    p9 = dt[["date", "양상추"]]
-    bar9 = plt.bar(p9["date"], p9["양상추"], label="가격 (원)", color='orange', edgecolor='darkorange', linewidth=2)
-    plt.legend(loc=(0.4, -0.2))
-    for rect in bar9:
-        height = rect.get_height()
-        plt.text(rect.get_x() + rect.get_width() / 2.0, height, '%.1f' % height, ha='center', va='bottom', size=12)
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p9.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    # 거래량통계
-    ## 깻잎
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "깻잎"]]
-    bar = plt.plot(p["date"], p["깻잎"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["깻잎"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p1_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 대파
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "대파"]]
-    bar = plt.plot(p["date"], p["대파"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["대파"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p2_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 마늘
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "마늘"]]
-    bar = plt.plot(p["date"], p["마늘"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["마늘"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p3_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 무
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "무"]]
-    bar = plt.plot(p["date"], p["무"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["무"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p4_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 배추
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "배추"]]
-    bar = plt.plot(p["date"], p["배추"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["배추"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p5_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 상추
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "상추"]]
-    bar = plt.plot(p["date"], p["상추"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["상추"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p6_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 양파
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "양파"]]
-    bar = plt.plot(p["date"], p["양파"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["양파"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p7_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 시금치
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "시금치"]]
-    bar = plt.plot(p["date"], p["시금치"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["시금치"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p8_.png', bbox_inches='tight',
-                pad_inches=0.3)
-
-    ## 양상추
-    plt.figure(figsize=(6, 4))
-    p = dt_[["date", "양상추"]]
-    bar = plt.plot(p["date"], p["양상추"], '.-', label="거래량 (kg)", color='darkorange')
-    plt.legend(loc=(0.35, -0.2))
-    plt.fill_between(p['date'], p["양상추"], alpha=0.5, color='orange')
-    plt.savefig('C:/Users/Admin/Desktop/WEB/project/statistic/static/graph/statistic_p9_.png', bbox_inches='tight',
-                pad_inches=0.3)
+import torch
+import os
+import io
 
 def landing(request):
-    # make()
+    if os.path.isfile('media/yolo5'):
+        shutil.rmtree('media/yolo5')
     url = "https://search.naver.com/search.naver?where=news&sm=tab_jum&query=%EB%86%8D%EC%82%B0%EB%AC%BC"
 
     response = requests.get(url)
@@ -234,11 +31,103 @@ def landing(request):
         request,
         'single_pages/landing.html',
         {'title': title_list, 'link': link_list}
-
     )
 
-def find(request):
-    return render(
-        request,
-        'single_pages/find.html'
-    )
+class UploadImage(CreateView):
+    model = ImageModel
+    template_name = 'single_pages/find.html'
+    fields = ["image"]
+
+    def post(self, request, *args, **kwargs):
+        form = ImageUploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            img = request.FILES.get('image')
+            img_instance = ImageModel(
+                image=img
+            )
+            img_instance.save()
+
+            uploaded_img_qs = ImageModel.objects.filter().last()
+            img_bytes = uploaded_img_qs.image.read()
+            img = im.open(io.BytesIO(img_bytes))
+            img_size = img.size
+
+            path_hubconfig = "yolov5"
+            path_weightfile = "single_pages/best.pt"
+            img_name = {0: '양파',
+                        1: '배추',
+                        2: '깻잎',
+                        3: '시금치',
+                        4: '깻잎',
+                        5: '무',
+                        6: '상추',
+                        7: '양상추',
+                        8: '대파',
+                        9: '마늘'}
+            model = torch.hub.load(path_hubconfig, 'custom', path=path_weightfile, source='local')
+            model.eval()
+            torch.no_grad()
+            model.conf = 0.6
+            model.names = img_name
+            results = model(img, size=160)
+
+            results.render()
+            for img in results.ims:
+                img_base64 = im.fromarray(img).resize(img_size)
+                img_base64.save("media/image0.jpg", format="JPEG")
+
+            inference_img = "/media/image0.jpg"
+            img_class = set(results.pandas().xyxy[0]['class'])
+            img_pred = {0: 'predict_7',
+                        1: 'predict_5',
+                        2: 'predict_1',
+                        3: 'predict_8',
+                        4: 'predict_1',
+                        5: 'predict_4',
+                        6: 'predict_6',
+                        7: 'predict_9',
+                        8: 'predict_2',
+                        9: 'predict_3'}
+            img_sta = {0: 'statistic_7',
+                       1: 'statistic_5',
+                       2: 'statistic_1',
+                       3: 'statistic_8',
+                       4: 'statistic_1',
+                       5: 'statistic_4',
+                       6: 'statistic_6',
+                       7: 'statistic_9',
+                       8: 'statistic_2',
+                       9: 'statistic_3'}
+            img_inf = {0: 'about_7',
+                       1: 'about_5',
+                       2: 'about_1',
+                       3: 'about_8',
+                       4: 'about_1',
+                       5: 'about_4',
+                       6: 'about_6',
+                       7: 'about_9',
+                       8: 'about_2',
+                       9: 'about_3'}
+            img_all = []
+            for i in img_class:
+                a = []
+                a.append(img_name[i])
+                a.append(img_pred[i])
+                a.append(img_sta[i])
+                a.append(img_inf[i])
+                img_all.append(a)
+
+            form = ImageUploadForm()
+            context = {
+                "form": form,
+                "inference_img": inference_img,
+                'img_all' : img_all
+            }
+            return render(request, 'single_pages/find.html', context)
+
+        else:
+            form = ImageUploadForm()
+        context = {
+            "form": form
+        }
+        return render(request, 'single_pages/find.html', context)

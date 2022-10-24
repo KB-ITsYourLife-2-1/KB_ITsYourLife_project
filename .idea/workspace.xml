@@ -2,7 +2,216 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9058993c-fa0c-4db2-a8a9-0c28ae6db13f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/best.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/single_pages/static/images/annong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/base_data_20221023.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/base_data_20221024.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p1_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p1_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p1_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p1_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p2_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p2_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p2_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p2_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p3_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p3_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p3_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p3_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p4_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p4_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p4_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p4_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p5_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p5_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p5_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p5_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p6_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p6_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p6_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p6_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p7_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p7_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p7_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p7_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p8_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p8_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p8_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p8_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221023_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221024_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/ISSUE_TEMPLATE/bug-report.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/ISSUE_TEMPLATE/feature-request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/ISSUE_TEMPLATE/question.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/README_cn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/dependabot.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/workflows/ci-testing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/workflows/codeql-analysis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/workflows/docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/workflows/greetings.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.github/workflows/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/.pre-commit-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/benchmarks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/classify/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/classify/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/classify/val.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/Argoverse.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/GlobalWheat2020.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/ImageNet.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/Objects365.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/SKU-110K.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/VOC.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/VisDrone.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/coco.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/coco128-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/coco128.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/hyps/hyp.Objects365.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/hyps/hyp.VOC.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/hyps/hyp.scratch-high.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/hyps/hyp.scratch-low.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/hyps/hyp.scratch-med.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/images/bus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/images/zidane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/scripts/download_weights.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_coco.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_coco128.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/scripts/get_imagenet.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/data/xView.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/detect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/hubconf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/experimental.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/anchors.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov3-spp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov3-tiny.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov3.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-bifpn.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-fpn.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-p2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-p34.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-p6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-p7.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5-panet.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5l6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5m6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5n6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5s-LeakyReLU.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5s-ghost.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5s-transformer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5s6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/hub/yolov5x6.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/segment/yolov5l-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/segment/yolov5m-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/segment/yolov5n-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/segment/yolov5s-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/segment/yolov5x-seg.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/tf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolov5l.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolov5m.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolov5n.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolov5s.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/models/yolov5x.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/segment/predict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/segment/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/segment/val.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/tutorial.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/activations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/augmentations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/autoanchor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/autobatch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/aws/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/aws/mime.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/aws/resume.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/aws/userdata.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/callbacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/dataloaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/docker/Dockerfile-arm64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/docker/Dockerfile-cpu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/downloads.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/flask_rest_api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/flask_rest_api/example_request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/flask_rest_api/restapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/general.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/google_app_engine/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/google_app_engine/additional_requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/google_app_engine/app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/clearml/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/clearml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/clearml/clearml_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/clearml/hpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/comet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/comet/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/comet/comet_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/comet/hpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/log_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/sweep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/sweep.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loggers/wandb/wandb_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/plots.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/augmentations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/dataloaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/general.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/metrics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/segment/plots.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/torch_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/utils/triton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yolov5/val.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/js/breakpoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/static/js/breakpoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/js/browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/static/js/browser.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/js/jquery.dropotron.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/static/js/jquery.dropotron.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/templates/single_pages/find.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/templates/single_pages/find.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/static/css/fontawesome-all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/css/fontawesome-all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/static/js/breakpoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/js/breakpoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/static/js/browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/js/browser.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/static/js/jquery.dropotron.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/js/jquery.dropotron.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p1.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p2.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p3.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p4.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p5.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p6.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p7.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p8.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/p9.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/p9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/total.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/total.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +234,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/KB_ITsYourLife_project",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project\statistic" />
+      <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,8 +257,12 @@
       <option name="presentableId" value="Default" />
       <updated>1666595793823</updated>
       <workItem from="1666595797149" duration="7000" />
+      <workItem from="1666599113705" duration="1068000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path("", views.landing, name="home"),
-    path("find/", views.find, name="find" )
+    path("find/", views.UploadImage.as_view(), name="find")
 ]
