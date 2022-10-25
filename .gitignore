@@ -9,7 +9,8 @@
 
 
 
-### Django ###
+### Django ##
+ .tmp.driveupload/
 .idea/workspace.xml
 *.log
 *.pot

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9058993c-fa0c-4db2-a8a9-0c28ae6db13f" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about/static/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/about/static/js/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about/templates/about/p9.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/p9.html" afterDir="false" />
@@ -53,6 +54,40 @@
       <change beforePath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221023.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/statistic/static/graph/statistic_p9_20221023_.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/statistic/static/js/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/static/js/test.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/about/static/images/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/static/images/c9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about/templates/about/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/templates/about/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/about/templates/about/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/about/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/about/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/predict/templates/predict/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/templates/predict/p9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/templates/single_pages/find.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/templates/single_pages/find.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/templates/single_pages/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/templates/single_pages/landing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/single_pages/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/templates/statistic/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/templates/statistic/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statistic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/statistic/views.py" afterDir="false" />
+>>>>>>> 7f49ef350b53eba0158e911f3b39a950fee12c19
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +120,8 @@
       <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\kb_2_work\MAIN_PJ\KB_ITsYourLife_project\about\static\images" />
+      <recent name="C:\Users\Admin\Desktop\kb_2_work\MAIN_PJ\KB_ITsYourLife_project\about\templates\about" />
       <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project\statistic" />
       <recent name="C:\Users\Admin\Desktop\KB_ITsYourLife_project" />
     </key>
