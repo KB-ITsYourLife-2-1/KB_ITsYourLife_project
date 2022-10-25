@@ -1,3 +1,4 @@
+import shutil
 from django.shortcuts import render
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup

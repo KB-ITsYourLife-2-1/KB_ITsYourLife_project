@@ -9,7 +9,10 @@ import requests
 import torch
 import os
 import io
+from datetime import datetime, timedelta
 
+today = datetime.now() - timedelta(1)
+today = today.year * 10000 + today.month * 100 + today.day
 
 def landing(request):
     if os.path.isfile('media/yolo5'):
@@ -28,10 +31,17 @@ def landing(request):
         a_href = li.find('a', class_='news_tit')['href']
         title_list.append(title)
         link_list.append(a_href)
+    ctx = {
+        'price1': f'../../static/graph/main_p1_{today}.png',
+        'price2': f'../../static/graph/main_p2_{today}.png',
+        'price3': f'../../static/graph/main_p3_{today}.png',
+        'price4': f'../../static/graph/main_p4_{today}.png',
+        'title': title_list, 'link': link_list
+    }
     return render(
         request,
         'single_pages/landing.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 
 
