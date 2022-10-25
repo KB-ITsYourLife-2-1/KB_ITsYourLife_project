@@ -32,7 +32,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_1\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_1\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_1\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_1\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -45,7 +45,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_2\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_2\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_2\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_2\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -58,7 +58,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_3\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_3\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_3\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_3\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -71,7 +71,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_4\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_4\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_4\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_4\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -84,7 +84,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_5\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_5\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_5\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_5\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -97,7 +97,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_6\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_6\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_6\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_6\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -110,7 +110,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_7\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_7\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_7\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_7\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -123,7 +123,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_8\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_8\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_8\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_8\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";
@@ -136,7 +136,7 @@ $(function() {
           str += "            <div id = 'find_all_'>";
           str += '                <button id = "find_"  onclick="location.href=\'/predict/product_9\'">가격 예측</button>';
           str += '                <button id = "find_" onclick="location.href=\'/statistic/product_9\'">통계 자료</button>';
-          str += '                <button id = "find_else" onclick="location.href=\'/about/product_9\'">농사물 바로 알기</button>';
+          str += '                <button id = "find_else" onclick="location.href=\'/about/product_9\'">농산물 바로 알기</button>';
           str += '            </div>';
           str += "          </div>";
           str += "        </div>";

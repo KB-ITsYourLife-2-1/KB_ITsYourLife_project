@@ -56,3 +56,16 @@ for i in range(9):
     plt.savefig(f'../statistic/static/graph/statistic_p{i+1}_{today}_.png', bbox_inches='tight',pad_inches=0.3)
     if os.path.exists(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}_.png'):
         os.remove(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}_.png')
+
+# 메인페이지 7일 동향
+vege_name = ['대파', '마늘', '시금치', '상추']
+for i in range(4):
+    fig = plt.figure(figsize=(4.5, 0.7))
+    ax = fig.add_subplot()
+    p1 = dt[["date",vege_name[i]]]
+    p = dt_[["date",vege_name[i]]]
+    ax.bar(p1["date"], p1[vege_name[i]],color='orange', edgecolor='darkorange', linewidth=2)
+    ax.plot(p["date"], p[vege_name[i]],'.-', label="거래량 (kg)",color="green")
+    plt.savefig(f'../single_pages/static/graph/main_p{i+1}_{today}.png', bbox_inches='tight')
+    if os.path.exists(f'../single_pages/static/graph/main_p{i+1}_{yesterday}.png'):
+        os.remove(f'../single_pages/static/graph/main_p{i+1}_{yesterday}.png')

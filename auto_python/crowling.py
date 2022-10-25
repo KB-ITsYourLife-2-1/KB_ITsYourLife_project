@@ -3,6 +3,7 @@ import requests
 import xml.etree.ElementTree as ET
 import pandas as pd
 from datetime import datetime, timedelta
+import os
 
 def check_(set, 작물):
     if set.shape[0] == 0:
@@ -104,15 +105,16 @@ all_date = pd.concat([all_date, c])
 data = all_date
 
 data['date'] = data['date'].astype(int).astype(str)
-data['date'] = pd.to_datetime(data['date'])
-t = {'0':'월요일', '1':'화요일', '2':'수요일', '3':'목요일', '4':'금요일', '5':'토요일', '6':'일요일'}
+data['date'] = pd.to_datetime(data['date'], format='%Y-%m-%d')
 data['요일'] = data['date'].dt.weekday
+data['date'] = data['date'].astype(str)
 data['요일'] = data['요일'].replace([0,1,2,3,4,5,6],['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'])
 data = pd.concat([data['date'], data['요일'], data.iloc[:,1:-1]], axis = 1)
 
 qwer = pd.read_csv(f'../statistic/static/graph/base_data_{yesterday}.csv')
-qwer = pd.concat([qwer, data]).reset_index(inplace=True)
-qwer.drop(['Unnamed: 0'], axis = 1, inplace = True)
+qwer = pd.concat([qwer, data])
+if 'Unnamed: 0' in qwer.columns:
+    qwer.drop(['Unnamed: 0'], axis = 1, inplace = True)
 qwer.to_csv(f'../statistic/static/graph/base_data_{today}.csv')
 
 if os.path.exists(f'../statistic/static/graph/base_data_{glyph}.csv'):
