@@ -2,6 +2,46 @@
 {% extends "statistic/base.html" %}
 
 {% block main_area %}
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <style>
+      .scrolltop {
+        display: none;
+        position: fixed;
+        right: 50px;
+        bottom: 110px;
+        z-index: 1030;
+        font-size: 1.875rem;
+        color: #868e96;
+        transition: all 2.5s ease-in-out;
+        opacity: 0.8;
+      }
+      .scrolltop:hover,
+      .scrolltop:focus {
+        color: #dc3545;
+        transition: all 0.5s ease-in-out;
+      }
+    </style>
+
+    <a id="backToTop" class="scrolltop" href="#">
+        <i class="fas fa-chevron-circle-up"></i>
+      </a>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        jQuery(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $('#backToTop').fadeIn(500);
+            } else {
+              $('#backToTop').fadeOut('slow');
+            }
+          });
+          $('#backToTop').click(function (e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 200);
+          });
+        });
+      </script>
     <!-- Posts -->
         <section class="wrapper style1" style="padding-top: 60px !important; padding-bottom: 100px !important;">
             <div style="margin-left: 142.4px; margin-right: 142.4px; padding-bottom: 50px; padding-top: 20px">

@@ -4,18 +4,19 @@
 {% block main_area %}
     <!-- Posts -->
     <section class="wrapper style1" style="padding-top: 60px !important; padding-bottom: 100px !important;" xmlns="http://www.w3.org/1999/html">
-        <div class="container" style="margin-left: 300px;">
+        <div class="container">
             <div class="row" style="padding-top: 10px; margin-left: 0px">
-                <p style="font-size: 40px; font-family: bmjua; line-height:50px; margin-bottom: 20px; text-align: center; text-decoration: underline #66b978 8px; padding-left: 400px; padding-top: 40px;">
-                    정보가 궁금하신 농산물을 클릭해주세요!</p>
+                <div style="font-size: 40px; font-family: bmjua; line-height:50px; margin-bottom: 20px; text-align: center; text-decoration: underline #66b978 8px; padding-top: 40px; padding-left:0px; text-align: center; width: 100%;">
+                    정보가 궁금하신 농산물을 클릭해주세요!
+                </div>
                <div class="about">
-                   <div class = "row" style="padding-left: 130px;">
+                   <div class = "row" style="padding-left: 150px; margin-left: 0px">
                         <a href={% url "about_1" %}> <img src="../../static/images/c1.png" alt="" width="200" height="200"></a>
                         <a href={% url "about_2" %}> <img src="../../static/images/c2.png" alt="" width="200" height="200"></a>
                         <a href={% url "about_3" %}> <img src="../../static/images/c3.png" alt="" width="200" height="200"></a>
                         <a href={% url "about_4" %}> <img src="../../static/images/c4.png" alt="" width="200" height="200"></a>
                    </div>
-                   <div class = "row">
+                   <div class = "row" style="padding-left: 80px;">
                         <a href={% url "about_5" %}> <img src="../../static/images/c5.png" alt="" width="200" height="200"></a>
                         <a href={% url "about_6" %}> <img src="../../static/images/c6.png" alt="" width="200" height="200"></a>
                         <a href={% url "about_7" %}> <img src="../../static/images/c7.png" alt="" width="200" height="200"></a>
