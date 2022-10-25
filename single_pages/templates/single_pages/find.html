@@ -53,17 +53,6 @@
                      <ul>
                         <li>
                            <a  href={% url "predict" %} style="width:190px">가격예측</a>
-                           <ul>
-                              <li><a href={% url "predict_1" %}>깻잎</a></li>
-                              <li><a href={% url "predict_2" %}>대파</a></li>
-                              <li><a href={% url "predict_3" %}>마늘</a></li>
-                              <li><a href={% url "predict_4" %}>무</a></li>
-                                        <li><a href={% url "predict_5" %}>배추</a></li>
-                              <li><a href={% url "predict_6" %}>상추</a></li>
-                              <li><a href={% url "predict_7" %}>양파</a></li>
-                              <li><a href={% url "predict_8" %}>시금치</a></li>
-                                        <li><a href={% url "predict_9" %}>양상추</a></li>
-                           </ul>
                         </li>
                                 <li>
                            <a href={% url "statistic" %} style="width:190px">가격통계</a>
@@ -81,7 +70,7 @@
                         </li>
                         <li><a style="color: #fff; font-weight:900; width:190px" href={% url "find" %}>농산물 찾기</a></li>
                                 <li>
-                           <a style="width:190px">농산물 바로알기</a>
+                           <a href={% url "about" %} style="width:190px">농산물 바로알기</a>
                            <ul>
                               <li><a href={% url "about_1" %}>깻잎</a></li>
                               <li><a href={% url "about_2" %}>대파</a></li>
@@ -265,19 +254,7 @@
                 </body>
                 </html>
 
-            <!-- Footer -->
-                <div id="footer" style="padding-top: 0px !important;padding-bottom:0px !important;">
 
-                    <!-- Copyright -->
-                        <div class="copyright">
-                            <ul class="menu">
-                                <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-
-                </div>
-
-      </div>
 
       <!— Scripts —>
          <script type="text/javascript" src="../../static/js/jquery.min.js"></script>

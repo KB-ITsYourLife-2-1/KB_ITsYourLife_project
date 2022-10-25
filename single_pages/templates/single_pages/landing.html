@@ -32,17 +32,6 @@
 							<ul>
 								<li>
 									<a  style="width:190px" href={%url "predict" %}>가격예측</a>
-									<ul>
-										<li><a href={% url "predict_1" %}>깻잎</a></li>
-										<li><a href={% url "predict_2" %}>대파</a></li>
-										<li><a href={% url "predict_3" %}>마늘</a></li>
-										<li><a href={% url "predict_4" %}>무</a></li>
-                                        <li><a href={% url "predict_5" %}>배추</a></li>
-										<li><a href={% url "predict_6" %}>상추</a></li>
-										<li><a href={% url "predict_7" %}>양파</a></li>
-										<li><a href={% url "predict_8" %}>시금치</a></li>
-                                        <li><a href={% url "predict_9" %}>양상추</a></li>
-									</ul>
 								</li>
                                 <li>
 									<a  style="width:190px" href={% url "statistic" %}>가격통계</a>
@@ -60,7 +49,7 @@
 								</li>
 								<li><a style="width:190px" href={% url "find" %}>농산물 찾기</a></li>
                                 <li>
-									<a style="width:190px">농산물 바로알기</a>
+									<a href={% url "about" %} style="width:190px">농산물 바로알기</a>
 									<ul>
 										<li><a href={% url "about_1" %}>깻잎</a></li>
 										<li><a href={% url "about_2" %}>대파</a></li>

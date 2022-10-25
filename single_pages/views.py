@@ -10,6 +10,7 @@ import torch
 import os
 import io
 
+
 def landing(request):
     if os.path.isfile('media/yolo5'):
         shutil.rmtree('media/yolo5')
@@ -32,6 +33,7 @@ def landing(request):
         'single_pages/landing.html',
         {'title': title_list, 'link': link_list}
     )
+
 
 class UploadImage(CreateView):
     model = ImageModel
@@ -78,16 +80,7 @@ class UploadImage(CreateView):
 
             inference_img = "/media/image0.jpg"
             img_class = set(results.pandas().xyxy[0]['class'])
-            img_pred = {0: 'predict_7',
-                        1: 'predict_5',
-                        2: 'predict_1',
-                        3: 'predict_8',
-                        4: 'predict_1',
-                        5: 'predict_4',
-                        6: 'predict_6',
-                        7: 'predict_9',
-                        8: 'predict_2',
-                        9: 'predict_3'}
+
             img_sta = {0: 'statistic_7',
                        1: 'statistic_5',
                        2: 'statistic_1',
@@ -111,8 +104,8 @@ class UploadImage(CreateView):
             img_all = []
             for i in img_class:
                 a = []
+                a.append('predict')
                 a.append(img_name[i])
-                a.append(img_pred[i])
                 a.append(img_sta[i])
                 a.append(img_inf[i])
                 img_all.append(a)
@@ -121,13 +114,14 @@ class UploadImage(CreateView):
             context = {
                 "form": form,
                 "inference_img": inference_img,
-                'img_all' : img_all
+                'img_all': img_all,
             }
             return render(request, 'single_pages/find.html', context)
 
         else:
             form = ImageUploadForm()
         context = {
-            "form": form
+            "form": form,
         }
+
         return render(request, 'single_pages/find.html', context)
