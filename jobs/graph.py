@@ -1,3 +1,4 @@
+
 from datetime import datetime, timedelta
 import matplotlib
 matplotlib.use('TkAgg')
@@ -13,7 +14,7 @@ yesterday = datetime.now() - timedelta(2)
 yesterday = yesterday.year * 10000 + yesterday.month * 100 + yesterday.day
 
 # 데이터 불러오기
-data = pd.read_csv(f"../statistic/static/graph/base_data_{today}.csv")
+data = pd.read_csv(f'./statistic/static/graph//base_data_{today}.csv')
 
 # 데이터 전처리
 data = data.tail(7)
@@ -42,9 +43,9 @@ for i in range(9):
     for rect in bar:
         height = rect.get_height()
         plt.text(rect.get_x() + rect.get_width() / 2.0, height, '%.1f' % height, ha='center', va='bottom', size=12)
-    plt.savefig(f'../statistic/static/graph/statistic_p{i+1}_{today}.png', bbox_inches='tight',pad_inches=0.3)
-    if os.path.exists(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}.png'):
-        os.remove(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}.png')
+    plt.savefig(f'./statistic/static/graph/statistic_p{i+1}_{today}.png', bbox_inches='tight',pad_inches=0.3)
+    if os.path.exists(f'./statistic/static/graph/statistic_p{i+1}_{yesterday}.png'):
+        os.remove(f'./statistic/static/graph/statistic_p{i+1}_{yesterday}.png')
 
 # 거래량통계
 for i in range(9):
@@ -53,9 +54,9 @@ for i in range(9):
     bar = plt.plot(p["date"], p[vege_name[i]], '.-', label="거래량 (kg)", color='darkorange')
     plt.legend(loc=(0.35, -0.2))
     plt.fill_between(p['date'], p[vege_name[i]], alpha=0.5, color='orange')
-    plt.savefig(f'../statistic/static/graph/statistic_p{i+1}_{today}_.png', bbox_inches='tight',pad_inches=0.3)
-    if os.path.exists(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}_.png'):
-        os.remove(f'../statistic/static/graph/statistic_p{i+1}_{yesterday}_.png')
+    plt.savefig(f'./statistic/static/graph/statistic_p{i+1}_{today}_.png', bbox_inches='tight',pad_inches=0.3)
+    if os.path.exists(f'./statistic/static/graph/statistic_p{i+1}_{yesterday}_.png'):
+        os.remove(f'./statistic/static/graph/statistic_p{i+1}_{yesterday}_.png')
 
 # 메인페이지 7일 동향
 vege_name = ['대파', '마늘', '시금치', '상추']
@@ -66,6 +67,7 @@ for i in range(4):
     p = dt_[["date",vege_name[i]]]
     ax.bar(p1["date"], p1[vege_name[i]],color='orange', edgecolor='darkorange', linewidth=2)
     ax.plot(p["date"], p[vege_name[i]],'.-', label="거래량 (kg)",color="green")
-    plt.savefig(f'../single_pages/static/graph/main_p{i+1}_{today}.png', bbox_inches='tight')
-    if os.path.exists(f'../single_pages/static/graph/main_p{i+1}_{yesterday}.png'):
-        os.remove(f'../single_pages/static/graph/main_p{i+1}_{yesterday}.png')
+    plt.savefig(f'./single_pages/static/graph/main_p{i+1}_{today}.png', bbox_inches='tight')
+    plt.close(fig)
+    if os.path.exists(f'./single_pages/static/graph/main_p{i+1}_{yesterday}.png'):
+        os.remove(f'./single_pages/static/graph/main_p{i+1}_{yesterday}.png')
