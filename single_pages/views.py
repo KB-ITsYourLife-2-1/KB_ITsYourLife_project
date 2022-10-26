@@ -114,8 +114,8 @@ class UploadImage(CreateView):
             img_all = []
             for i in img_class:
                 a = []
-                a.append('predict')
                 a.append(img_name[i])
+                a.append('predict')
                 a.append(img_sta[i])
                 a.append(img_inf[i])
                 img_all.append(a)

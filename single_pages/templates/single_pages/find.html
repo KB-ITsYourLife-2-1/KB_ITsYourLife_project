@@ -136,20 +136,18 @@
                                                     <div style=" display:flex; align-items:center;">이미지를 넣어주세요!</div>
                                                  {% endif %}
                                              </div>
-                                             <div class="col-6" style="padding: 3px 15px; border: 2px solid rgba(188, 155, 93, 1); background-color: white; font-family:bmjua; font-size:90%; text-align:center;">
+                                             <div class="col-6" style="padding: 3px 15px; border: 2px solid rgba(188, 155, 93, 1); background-color: white; font-family:bmjua; font-size:90%; text-align:center;  display: flex; align-items: center">
                                                  {% if img_all %}
                                                     {% for img in img_all %}
-                                                        <div style="margin-top:15px">
+                                                        <div style="margin-top:15px;text-align: center; width: 100%">
                                                             <span style="font-size:110%;">미농이가 보기에는 {{img.0}}인 것 같아요!</span><br>
-                                                        </div>
-                                                        <div>
-                                                            <button href = "{% url img.1 %}" style="color:black; margin:auto; display:block; margin-bottom:5px; margin-top:10px; display:flex; align-items:center;">{{img.0}} 가격예측</button>
-                                                            <button href = "{% url img.2 %}" style="color:black; margin:auto; display:block; margin-bottom:5px; display:flex; align-items:center;">{{img.0}} 가격통계</button>
-                                                            <button href = "{% url img.3 %}" style="color:black; margin:auto; display:block; margin-bottom:15px; display:flex; align-items:center;">{{img.0}} 바로알기</button>
+                                                            <div><button style="margin:auto; display:block; margin-bottom:5px; margin-top:10px; display:flex; align-items:center;"><a href = "{% url img.1 %}" style="color:black;">{{img.0}} 가격예측</a></button></div>
+                                                            <div><button style="color:black; margin:auto; display:block; margin-bottom:5px; display:flex; align-items:center;"><a href = "{% url img.2 %}" style="color:black;">{{img.0}} 가격통계</a></button></div>
+                                                            <div><button style="color:black; margin:auto; display:block; margin-bottom:15px; display:flex; align-items:center;"><a href = "{% url img.3 %}" style="color:black;">{{img.0}} 바로알기</a></button></div>
                                                         </div>
                                                     {% endfor %}
                                                  {% else %}
-                                                 <span style="color:#A4A4A4"><br>미농이가 보기에는 ...<br><br></span>
+                                                 <span style="color:#A4A4A4; text-align: center; width: 100%"><br>미농이가 보기에는 ...<br><br></span>
                                                  {% endif %}
                                              </div>
                                          </div>
