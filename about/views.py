@@ -13,17 +13,20 @@ def about(request):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         request,
-        "about/about.html",
-        {'title': title_list, 'link': link_list}
+        "about/about.html",ctx
     )
 def p1(request):
     if os.path.isfile('media/yolo5'):
@@ -35,17 +38,21 @@ def p1(request):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         request,
         "about/p1.html",
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p2(requeast):
     if os.path.isfile('media/yolo5'):
@@ -57,17 +64,21 @@ def p2(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p2.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p3(requeast):
     if os.path.isfile('media/yolo5'):
@@ -79,17 +90,21 @@ def p3(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p3.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p4(requeast):
     if os.path.isfile('media/yolo5'):
@@ -101,17 +116,21 @@ def p4(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p4.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p5(requeast):
     if os.path.isfile('media/yolo5'):
@@ -123,17 +142,21 @@ def p5(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p5.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p6(requeast):
     if os.path.isfile('media/yolo5'):
@@ -145,17 +168,21 @@ def p6(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p6.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p7(requeast):
     if os.path.isfile('media/yolo5'):
@@ -167,17 +194,21 @@ def p7(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p7.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 def p8(requeast):
     if os.path.isfile('media/yolo5'):
@@ -189,17 +220,21 @@ def p8(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p8.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )
 
 def p9(requeast):
@@ -212,15 +247,19 @@ def p9(requeast):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
+    ctx = {
+        'list': all_list
+    }
     return render(
         requeast,
         'about/p9.html',
-        {'title': title_list, 'link': link_list}
+        ctx
     )

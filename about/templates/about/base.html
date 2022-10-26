@@ -8,6 +8,72 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen">
 
+        <style>
+            #slider{
+                        margin: auto;
+                        overflow: hidden;
+                        padding: 20px;
+                        position: relative;
+                        width: 1599px;
+                    }
+
+            #slider li{
+                        float: left;
+                        position: relative;
+                        width: 533px;
+                        display: inline-block;
+                        height: 200px;
+                    }
+
+            #slider ul{
+                        list-style: none;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 9000px;
+                        transition: left .2s linear;
+                        -moz-transition: left .2s linear;
+                        -o-transition: left .2s linear;
+                        -webkit-transition: left .2s linear;
+                        margin-left: -25px;
+                        font-family: open sans;
+                    }
+
+            .slider-container{
+                      color:#000;
+                      padding: 0;
+                      width: 500px;
+                      min-height: 180px;
+                      text-align:center;
+                    }
+
+            @-webkit-keyframes slide-animation {
+                        0% {opacity:0;}
+                        2% {opacity:1;}
+                        20% {left:0px; opacity:1;}
+                        22.5% {opacity:0.6;}
+                        25% {left:-533px; opacity:1;}
+                        45% {left:-533px; opacity:1;}
+                        47.5% {opacity:0.6;}
+                        50% {left:-1066px; opacity:1;}
+                        70% {left:-1066px; opacity:1;}
+                        72.5% {opacity:0.6;}
+                        75% {left:-1500px; opacity:1;}
+                        95% {opacity:1;}
+                        98% {left:-1599px; opacity:0;}
+                        100% {left:0px; opacity:0;}
+                    }
+
+            #slider ul{
+                        -webkit-animation: slide-animation 20s infinite;
+                    }
+
+            #slider ul:hover{
+                        -moz-animation-play-state: paused;
+                        -webkit-animation-play-state: paused;
+                    }
+        </style>
+
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -154,32 +220,19 @@
 
             <!-- Footer -->
                 <section class="section1 dv_wrap" style="padding-top: 20px; margin-left: 40px">
-                    <span class="news" style="margin-top: 10px; margin-right: 10px">
+                    <span class="news">
                         농산뉴스
                     </span>
-                    <div id="flow_wrap" style="visibility: visible; opacity: 1;padding-bottom: 20px;width: 1650px;margin-left: 0px;">
-                        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; inset: auto; z-index: auto; width: 570px; height: 57px; margin: 0px 0px 0px 6.32812px; overflow: hidden;">
-                            <ul class="list_dot1" style="left: 0; padding-left: 0;text-align: left; float: none; position: absolute; inset: 0px auto auto 0px; margin: 0px; width: 2470px; height: 57px; z-index: auto;">
-                                <li style="width: 190px; height: 57px; left:0;">
-                                    <a href={{link.0}}>{{title.0}}</a>
+                    <div id="slider">
+                        <ul style="padding-top:0px">
+                            {% for list_ in list %}
+                                <li>
+                                    <div class="slider-container">
+                                        <a href={{list_.1}} style="color:black;">{{list_.0}}</a>
+                                    </div>
                                 </li>
-                                <li style="width: 170px; height: 57px;">
-                                    <a href={{link.1}}>{{title.1}}</a>
-                                </li>
-                                <li style="width: 190px; height: 57px;">
-                                    <a href={{link.2}}>{{title.2}}</a>
-                                </li>
-                                <li style="width: 190px; height: 57px;">
-                                    <a href={{link.3}}>{{title.3}}</a>
-                                </li>
-                                <li style="width: 190px; height: 57px;">
-                                    <a href={{link.4}}>{{title.4}}</a>
-                                </li>
-                                <li style="width: 190px; height: 57px;">
-                                    <a href={{link.5}}>{{title.5}}</a>
-                                </li>
-                            </ul>
-                        </div>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </section>
 

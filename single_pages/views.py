@@ -24,19 +24,20 @@ def landing(request):
     soup = BeautifulSoup(html, 'html.parser')
 
     news_lis = soup.select('#main_pack > section > div > div.group_news > ul > li')
-    title_list = []
-    link_list = []
+    all_list = []
     for li in news_lis:
+        news_list = []
         title = li.find('a', class_='news_tit')['title']
         a_href = li.find('a', class_='news_tit')['href']
-        title_list.append(title)
-        link_list.append(a_href)
+        news_list.append(title)
+        news_list.append(a_href)
+        all_list.append(news_list)
     ctx = {
         'price1': f'../../static/graph/main_p1_{today}.png',
         'price2': f'../../static/graph/main_p2_{today}.png',
         'price3': f'../../static/graph/main_p3_{today}.png',
         'price4': f'../../static/graph/main_p4_{today}.png',
-        'title': title_list, 'link': link_list
+        'list': all_list
     }
     return render(
         request,
