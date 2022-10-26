@@ -108,7 +108,7 @@ def func():
     submmision = pd.DataFrame(day7).T
     submmision.columns = features
 
-    submmision.to_csv(f'./predict/static/graph/predict_{today}.csv')
+    submmision.to_csv(f'./predict/static/images/predict_{today}.csv')
 
-    if os.path.exists(f'./predict/static/graph/predict_{last}.csv'):
-        os.remove(f'./predict/static/graph/predict__{last}.csv')
+    if os.path.exists(f'./predict/static/images/predict_{last}.csv'):
+        os.remove(f'./predict/static/images/predict__{last}.csv')

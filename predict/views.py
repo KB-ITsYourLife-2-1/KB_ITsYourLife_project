@@ -2,6 +2,8 @@ import shutil
 
 from django.shortcuts import render
 from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
+import pandas as pd
 import os
 import requests
 # Create your views here.
@@ -22,8 +24,21 @@ def total(request):
         news_list.append(title)
         news_list.append(a_href)
         all_list.append(news_list)
+
+    today = datetime.now() - timedelta(2)
+    today = today.year * 10000 + today.month * 100 + today.day
+
+    pred_p = pd.read_csv(f'./predict/static/images/predict_{today}.csv')
+    price_vege = pd.read_csv(f'./statistic/static/graph/base_data_{today}.csv')
+    vege = ['깻잎', '대파', '마늘', '무', '배추', '상추', '양파', '시금치', '양상추']
+    price = []
+    for i in vege:
+        price.append(pred_p[i])
+
     ctx = {
-        'list': all_list
+        'list': all_list,
+        'vege' : vege,
+        'price':price
     }
     return render(
         request,
