@@ -56,7 +56,12 @@
      #price
      {
          font-family: bmjua;
-         font-size: 45px;
+         font-size: 35px;
+     }
+     #price_b
+     {
+         font-family: bmjua;
+         font-size: 27px;
      }
      .accordion-body{
          padding-top: 25px;
@@ -80,13 +85,13 @@
                     <td>
                         <div style="width:1000px; font-family: bmjua; font-size: 30px; display: flex; align-items: center">
                             <img src="../../static/images/annong.png">
-                            <span>미농이가 예측한 7일 평균 가격입니다!</span>
+                            <span>미농이가 예측한 이번주와 다음주 농산물 가격입니다!</span>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="accordion" id="accordionExample" style="width:1000px; display: inline-block">
+                        <div class="accordion" id="accordionExample" style="width:1100px; display: inline-block">
                           <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -95,10 +100,11 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                  <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.0 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.0.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.0 }} 원</span></div>
+                                  <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.0 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.0.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 7719 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.0 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -111,10 +117,11 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.1 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.1.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.1 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.1 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.1.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 1463 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.1 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -127,10 +134,11 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.2 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.2.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.2 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.2 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.2.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 5543 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.2 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -143,10 +151,11 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.3 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.3.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.3 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.3 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.3.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 932 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.3 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -159,10 +168,11 @@
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                   <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.4 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.4.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.4 }} 원</span></div>
+                                   <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.4 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.4.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 1121 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.4 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -175,10 +185,11 @@
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.5 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.5.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.5 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.5 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.5.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 2407 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.5 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -191,10 +202,11 @@
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.6 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.6.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.6 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.6 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.6.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 1130 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.6 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -207,10 +219,11 @@
                             </h2>
                             <div id="collapseEigth" class="accordion-collapse collapse" aria-labelledby="headingEigth" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.7 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.7.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.7 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.7 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.7.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 2860 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.7 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
@@ -223,10 +236,11 @@
                             </h2>
                             <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                 <div class="row" style="display: flex; align-items: center">
-                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.8 }}.png" style="width: 40px;"></div>
-                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.8.0 }} 원</span></div>
-                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.8 }} 원</span></div>
+                                 <div class="row" style="display: flex; align-items: center; padding-left: 25px">
+                                      <div class="col-1" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.8 }}.png" style="width: 40px;"></div>
+                                      <div class="col-4" style="padding-left: 0px; text-align: center"><span id="price"><span style="text-decoration: underline #66b978 8px">금주 예측</span> : {{ price.8.0 }} 원</span></div>
+                                      <div class="col-4" style="padding-left: 10px"><span id="price"><span style="text-decoration: underline #66b978 8px">차주 예측</span> : 1157 원</span></div>
+                                      <div class="col-3" style="padding-left: 0px"><span id="price_b"><span>전일가격</span> : {{ price_y.8 }} 원</span></div>
                                   </div>
                               </div>
                             </div>
