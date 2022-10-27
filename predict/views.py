@@ -25,20 +25,37 @@ def total(request):
         news_list.append(a_href)
         all_list.append(news_list)
 
-    today = datetime.now() - timedelta(2)
+    today = datetime.now() - timedelta(1)
     today = today.year * 10000 + today.month * 100 + today.day
 
-    pred_p = pd.read_csv(f'./predict/static/images/predict_{today}.csv')
+    for i in range(7):
+        pred_w = datetime.now() - timedelta(i)
+        if pred_w.weekday() == 6:
+            pred_w =  pred_w.year * 10000 + pred_w.month * 100 + pred_w.day
+            break
+
+    pred_p = pd.read_csv(f'./predict/static/images/predict_{pred_w}.csv')
     price_vege = pd.read_csv(f'./statistic/static/graph/base_data_{today}.csv')
+    price_vege = price_vege.fillna(0)
     vege = ['깻잎', '대파', '마늘', '무', '배추', '상추', '양파', '시금치', '양상추']
     price = []
+    price_y = []
     for i in vege:
+        find_vege = f'{i}_가격(원/kg)'
         price.append(pred_p[i])
-
+        price_y.append(int(price_vege[-1:][find_vege]))
+    UD = []
+    for i in range(9):
+        if price[i][0] > price_y[i]:
+            UD.append('up')
+        else:
+            UD.append('down')
     ctx = {
         'list': all_list,
         'vege' : vege,
-        'price':price
+        'price':price,
+        'price_y':price_y,
+        'ud':UD
     }
     return render(
         request,

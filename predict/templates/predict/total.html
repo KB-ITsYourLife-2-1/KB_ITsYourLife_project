@@ -51,11 +51,12 @@
      {
          font-family: bmjua;
          font-size: 40px;
+         font-weight: lighter;
      }
      #price
      {
          font-family: bmjua;
-         font-size: 50px;
+         font-size: 45px;
      }
      .accordion-body{
          padding-top: 25px;
@@ -67,120 +68,173 @@
         background-color: #4d8f5d;
         color: white;
     }
+    .accordion-button:hover{
+        background-color: #4d8f5d;
+    }
 
     </style>
     <!-- Posts -->
-        <section class="wrapper style1" style="padding-top: 60px !important; padding-bottom: 100px !important; display: flex; justify-content: center; align-items: center">
-            <div class="accordion" id="accordionExample" style="width:900px; display: inline-block">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <span id="vege_name">{{ vege.0 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <span id="price">{{ price.0.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <span id="vege_name">{{ vege.1 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.1.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <span id="vege_name">{{ vege.2 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.2.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <span id="vege_name">{{ vege.3 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.3.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <span id="vege_name">{{ vege.4 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                      <span id="price">{{ price.4.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <span id="vege_name">{{ vege.5 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.5.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    <span id="vege_name">{{ vege.6 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.6.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEigth">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEigth" aria-expanded="false" aria-controls="collapseEigth">
-                    <span id="vege_name">{{ vege.7 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseEigth" class="accordion-collapse collapse" aria-labelledby="headingEigth" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.7.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingNine">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                    <span id="vege_name">{{ vege.8 }}</span>
-                  </button>
-                </h2>
-                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <span id="price">{{ price.8.0 }} 원</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <section class="wrapper style1" style="padding-top: 60px !important; padding-bottom: 80px !important; display: flex; justify-content: center; align-items: center">
+            <table style="width: auto">
+                <tr>
+                    <td>
+                        <div style="width:1000px; font-family: bmjua; font-size: 30px; display: flex; align-items: center">
+                            <img src="../../static/images/annong.png">
+                            <span>미농이가 예측한 7일 평균 가격입니다!</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="accordion" id="accordionExample" style="width:1000px; display: inline-block">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <span id="vege_name">{{ vege.0 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.0 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.0.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.0 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span id="vege_name">{{ vege.1 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.1 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.1.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.1 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span id="vege_name">{{ vege.2 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.2 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.2.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.2 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span id="vege_name">{{ vege.3 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.3 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.3.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.3 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span id="vege_name">{{ vege.4 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                   <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.4 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.4.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.4 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <span id="vege_name">{{ vege.5 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.5 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.5.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.5 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <span id="vege_name">{{ vege.6 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.6 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.6.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.6 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEigth">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEigth" aria-expanded="false" aria-controls="collapseEigth">
+                                <span id="vege_name">{{ vege.7 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseEigth" class="accordion-collapse collapse" aria-labelledby="headingEigth" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.7 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.7.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.7 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <span id="vege_name">{{ vege.8 }}</span>
+                              </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                 <div class="row" style="display: flex; align-items: center">
+                                      <div class="col-2" style="text-align: center; padding-left: 15px"><img src="../../static/images/{{ ud.8 }}.png" style="width: 40px;"></div>
+                                      <div class="col-5" style="padding-left: 0px;"><span id="price"><span style="text-decoration: underline #66b978 8px">예측가격</span> : {{ price.8.0 }} 원</span></div>
+                                      <div class="col-5" style="padding-left: 0px"><span id="price"><span style="text-decoration: underline #66b978 8px">전일가격</span> : {{ price_y.8 }} 원</span></div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </section>
 
 {% endblock %}
