@@ -12,7 +12,7 @@ import io
 from datetime import datetime, timedelta
 
 today = datetime.now() - timedelta(1)
-today = today.year * 10000 + today.month * 100 + today.day
+today = today.year * 10000 + today.month* 100 + today.day
 
 def landing(request):
     if os.path.isfile('media/yolo5'):

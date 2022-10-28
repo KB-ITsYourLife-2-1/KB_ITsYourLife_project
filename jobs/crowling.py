@@ -86,7 +86,7 @@ for wkranf in range(9):
         j = 1
         while True:
             url = f'https://www.garak.co.kr/publicdata/dataOpen.do?id=3279&passwd=qwer1234!@&dataid=data12&pagesize=10&pageidx={j}&portal.templet=false&s_date={start}&s_bubin=1100010{s_bubin}&s_pummok={작물[wkranf]}&s_sangi='
-            text =  requests.get(url).text
+            text = requests.get(url).text
             root = ET.fromstring(text)
             if int(root.find('list_total_count').text) == 0:
                 break
@@ -119,5 +119,5 @@ if 'Unnamed: 0' in qwer.columns:
     qwer.drop(['Unnamed: 0'], axis = 1, inplace = True)
 qwer.to_csv(f'./statistic/static/graph/base_data_{today}.csv')
 
-if os.path.exists(f'../statistic/static/graph/base_data_{glyph}.csv'):
+if os.path.exists(f'./statistic/static/graph/base_data_{glyph}.csv'):
     os.remove(f'./statistic/static/graph/base_data_{glyph}.csv')

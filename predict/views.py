@@ -34,15 +34,20 @@ def total(request):
             pred_w =  pred_w.year * 10000 + pred_w.month * 100 + pred_w.day
             break
 
-    pred_p = pd.read_csv(f'./predict/static/images/predict_{pred_w}.csv')
+    pred_p_1 = pd.read_csv(f'./predict/static/images/predict_{pred_w}_1.csv')
+    pred_p_2 = pd.read_csv(f'./predict/static/images/predict_{pred_w}_2.csv')
+
     price_vege = pd.read_csv(f'./statistic/static/graph/base_data_{today}.csv')
     price_vege = price_vege.fillna(0)
     vege = ['깻잎', '대파', '마늘', '무', '배추', '상추', '양파', '시금치', '양상추']
     price = []
     price_y = []
     for i in vege:
+        ll = []
         find_vege = f'{i}_가격(원/kg)'
-        price.append(pred_p[i])
+        ll.append(int(pred_p_1[i]))
+        ll.append(int(pred_p_2[i]))
+        price.append(ll)
         price_y.append(int(price_vege[-1:][find_vege]))
     UD = []
     for i in range(9):
