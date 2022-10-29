@@ -9,7 +9,6 @@
 * Jupyter Notebook
 * Pycharm
 <br>
-<br>
 
 ## 사용 스택
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -20,15 +19,12 @@
 
 
 <br>
-<br>
 
 ## 조원
 
 <br>
-<br>
 
 ## 사용 모델
 
-<br>
 <br>
 
