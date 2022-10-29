@@ -1,7 +1,13 @@
  # 농산물 예측 프로젝트 
 
 국민은행 IT's Your Life 2기 1조 프로젝트
+<br>
+<br>
 
+## 개발 환경
+* VSCODE
+* Jupyter Notebook
+* Pycharm
 <br>
 <br>
 
